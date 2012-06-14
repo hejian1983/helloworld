@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="GB2312"?>
+
+<datas ver="1.00">
+<data id="9003" price_decimal="4">
+<dids>
+<did id="9003" name="City_Area_RE_SD" des="城市区划供求与成交" interval="0"/>
+</dids>
+<fields>
+<int32 id="1" name="Month" des="月份" encode="default" save="both" indexed="1" unique="1"/>
+<string id="2" name="City_name" des="城市名称" encode="default" save="both"/>
+<repeat id="3" name="City_Area_Data" des="城市区县数据">
+<string id="4" name="City_Area_name" des="城市区县名称" encode="default" presence="mandatory"/>
+<repeat id="5" name="Property_Type_Data" des="住宅属性数据">
+<string id="6" name="Property_Type" des="住宅属性" encode="default" presence="mandatory"/>
+<float id="7" name="Supply_Area" des="供应面积(㎡)" encode="default"/>
+<int64 id="8" name="Supply_number" des="供应套数(套)" encode="default"/>
+<float id="9" name="Transaction_Area" des="成交面积(㎡)" encode="default"/>
+<int64 id="10" name="Transaction_number" des="成交套数(套)" encode="default"/>
+<money id="11" name="Transaction_Amount" des="成交金额(元)" encode="default"/>
+</repeat>
+</repeat>
+</fields>
+</data>
+</datas>
